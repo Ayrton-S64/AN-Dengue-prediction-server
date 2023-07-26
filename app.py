@@ -48,7 +48,7 @@ def  diagnose():
                 float(data['plaquetas']),
                 float(data['alt']),
                 float(data['creatinina']), 
-                1 if (int(data['duracion_fiebre']) > 6) else 0,
+                1 if (int(data['edad']) > 6) else 0,
                 float(data['genero']),
                 float(data['cefalea']),
                 float(data['mialgia']),
