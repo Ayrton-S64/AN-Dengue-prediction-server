@@ -38,4 +38,5 @@ Sigue los siguientes pasos para ejecutar la aplicación:
    python app.py
 ```
 
-3. Abre una terminal y navega hasta la ubicación del proyecto, donde se encuentra el archivo "app.py".
+3. Abre tu navegador web y escribe la siguiente dirección en la barra de direcciones:
+   [por ejemplo 127.0.0.1:5000](http://127.0.0.1:5000)
