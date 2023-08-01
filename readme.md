@@ -24,7 +24,7 @@ pip install pandas
 pip install joblib
 pip install tensorflow
 pip install scikit-learn
-
+```
 
 ## Ejecución del Proyecto
 
@@ -34,8 +34,8 @@ Sigue los siguientes pasos para ejecutar la aplicación:
 
 2. Ejecuta el siguiente comando para iniciar la API Flask que proporciona la interfaz para la predicción de enfermedades:
 
-   ```bash
+```bash
    python app.py
-
+```
 
 3. Abre una terminal y navega hasta la ubicación del proyecto, donde se encuentra el archivo "app.py".
