@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from IPython.display import display
 from flask_cors import CORS
 from keras.models import load_model
@@ -21,7 +21,25 @@ app = Flask(__name__)
 
 CORS(app, origins='*')
 
-@app.route('/predict', methods=['POST'])
+#PAGES ROUTES
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/weather-cases')
+def view_cases_prediction():
+    return render_template('aplicaciones/weather_cases.html')
+
+@app.route('/severity-assesment')
+def view_severity_assesment():
+    return render_template('aplicaciones/pediatric_severity_assesment.html')
+
+@app.route('/illness-probability')
+def view_illness_probability():
+    return render_template('aplicaciones/illness_probability.html')
+
+#API ROUTES
+@app.route('/api/predict', methods=['POST'])
 def predict():
     try:
         data = request.json
@@ -36,7 +54,7 @@ def predict():
         return jsonify({'error': str(e)}), 400
 
 
-@app.route('/assess-severity', methods=['POST'])
+@app.route('/api/assess-severity', methods=['POST'])
 def  diagnose():
     try:
         data = request.json
@@ -73,7 +91,7 @@ def  diagnose():
         return jsonify({'error': str(e)}), 400
     
 
-@app.route('/illness-prediction', methods=['POST'])
+@app.route('/api/illness-prediction', methods=['POST'])
 def classify_illness():
     try:
         data = request.json
