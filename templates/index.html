@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HSR - Dengue Prevention program</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">     
+        <!-- <link rel="stylesheet" href="assets/css/fontawesome-all.min.css"> -->
+        <script src="https://kit.fontawesome.com/f2d5daf803.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body data-spy="" data-target="#main-nav" data-offset="60">
+
+    <div class="header">
+
+            <!--Content before waves-->
+            <div class="inner-header flex">
+            <!--Just the logo.. Don't mind this-->
+           <!-- <img style="width: 50px; height: 80px;"  src="recursos/1x/Recurso 1.png" alt=""> -->
+           <img style="width: 50px; height: 80px;"  src="{{ url_for('static',filename='recursos/1x/Recurso 1.png') }}" alt="">
+            <h1 style="text-align: center;">HOSPITAL SANTA ROSA</h1>
+            </div>
+            
+            <!--Waves Container-->
+            <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+            </svg>
+            </div>
+            <!--Waves end-->
+            
+     </div>
+<!--Seccion de info hospital-->
+    <section class="info-hospital">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-10 align-items-center justify-content-center" style=" height: auto; margin-top: 30px;"  >
+                <div class="row">
+                    <div class="col-6 ">
+                        <img class="img-fluid img-hospital" src="{{ url_for('static',filename='recursos/img/foto_hospital.jpg') }}" alt="">
+                    </div>
+                    <div class="col-6 info">
+                        <h1>Hospital Santa Rosa</h1>
+                        <p class="description">El Hospital Santa Rosa de Madre de Dios está ubicado en la ciudad de Puerto Maldonado, 
+                            la capital de la región de Madre de Dios en el suroriente de Perú. La ciudad se encuentra cerca de la frontera con Brasil y Bolivia,
+                            lo que la convierte en una zona estratégica para el comercio y la migración.
+                        </p> 
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+<!--Seccion de Mision Vision hospital-->
+
+    <section class="mv-hospital" style=" background-image:linear-gradient(90deg, rgba(242, 165, 22, 0.9) 30%, rgba(242, 205, 94, 0.9) 100%), url(recursos/img/Radio-Madre-de-Dios.jpg);">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-10 align-items-center justify-content-center">
+                <div class="row">
+                    <div class="col-5 text-center">
+                        <h1>Misión</h1>
+                        <p class="" style="color: white; font-weight: 600;">
+                            "Brindar atención con calidad y calidez para prevenir los riesgos, y proteger del daño, recuperar la salud y rehabilitar las capacidades de los usuarios, en condiciones de plena accesibilidad y de atención a la persona desde su concepción hasta su muerte natural."
+                        </p>
+                    </div>
+                    <div class="col-2 d-flex align-items-center justify-content-center">
+                        <div class="linea" style="height: 100%;
+                        width: 1px;
+                        background: #FFFF;">
+                        </div>
+                    </div>
+                    <div class="col-5 text-center">
+                        <h1>Vision</h1>
+                        <p style="color: white; font-weight: 600;">
+                            “Ser un hospital modelo acreditado según su nivel, que garantice la atención de salud especializada con equidad, calidad, eficiencia y acceso a la población más vulnerable y excluida, basado en evidencias, con el desarrollo de su potencial humano, trabajo en equipo y una fuerte cultura organizacional; con principios de universalidad, participación y contribuir al logro de una comunidad saludable.”
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+<!--Seccion de Mision Vision hospital-->
+
+   <section class="mv-prograna my-5">
+            <div class="row justify-content-center align-items-center">
+                    <div class="col-10 ">
+                        <h1 class="text-center">PREDICCIÓN DE BROTES DE DENGUE EN EL HOSPITAL SANTA ROSA DE PUERTO MALDONADO</h1>
+                        <div class="row justify-content-center ">
+                            <div class="col-5">
+                                    <h5 class="text-center subrayado">Objetivos del programa</h5>
+                                    <div class="objetivos">
+                                        <div class=" item-objetivo" >
+                                            <i class="fas fa-check-circle fa-lg" style="color: #42f312;padding-top: 12px;"></i>
+                                            <div> <span>Desarrollar un modelo de machine learning preciso y efectivo que haga uso de datos climáticos y demográficos para predecir los brotes de dengue en el Hospital Santa Rosa de Puerto Maldonado, proporcionando información valiosa para la planificación de planes de prevención y respuesta.</span></div>
+                                        </div>
+                                        <div class=" item-objetivo">
+                                            <i class="fas fa-check-circle fa-lg" style="color: #42f312;padding-top: 12px;"></i>
+                                            <div> <span>Determinar con precisión la gravedad de los casos médicos sobre dengue atendidos en el Hospital Santa Rosa por medio de los factores y variables clínicas, permitiendo la posibilidad de asignación adecuada de recursos y una atención oportuna para mejorar significativamente la calidad y esperanza de vida de los pacientes.</span></div>
+                                        </div>
+                                        <div class=" item-objetivo">
+                                            <i class="fas fa-check-circle fa-lg" style="color: #42f312;padding-top: 12px;"></i>
+                                            <div> <span>Desarrollar un modelo de machine learning que utilice datos clínicos para predecir la probabilidad de que un paciente presente enfermedades como dengue, zika, chikungunya, malaria o alguna otra enfermedad prevalente en la región, proporcionando información valiosa para la planificación de estrategias de prevención y respuesta en el Hospital Santa Rosa de Puerto Maldonado.</span></div>
+                                        </div>                
+                                    </div>
+                            </div>
+                            <div class="col-5  text-center">
+                                <img class="img-fluid img-objetivos" src="{{ url_for('static',filename='recursos/img/amarillo-flecha-dardo-golpeando-centro-diana.jpg') }}"  alt="">                            
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+        </section>
+    </section>
+
+    <!--Seccion de APLICACIONES-->
+    <section class="aplicaciones my-5">
+      <div class="row justify-content-center align-items-center">
+          <div class="col-10">
+              <h1 class="text-center">Aplicaciones</h1>
+          </div>
+      </div>
+      <section class="articles">
+
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img style="width: 100%; height: 100%;" src="{{ url_for('static',filename='recursos/img/clima-tipos.jpg') }}" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2 style="font-size: 1.8rem;">Prediccion de casos segun condiciones climatologicas</h2>
+              <a href="weather-cases" class="read-more">
+                Ver más<span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img style="width: 100%;height: 100%;" src="{{ url_for('static',filename='recursos/img/paciente_Pediatrico.jpg') }}" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2 >Severidad de pacientes pediatricos</h2>
+              <a href="severity-assesment" class="read-more">
+                Ver más <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="{{ url_for('static',filename='recursos/img/enfermedades_x_vectores.jpg') }}" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>Enfermedades transmitidas por vectores</h2>
+              <a href="illness-probability" class="read-more">
+                Ver más <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+  </section> 
+    <!--Seccion de EQUIPO-->
+  <section class="equipo">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-10">
+          <h1 class="text-center">EQUIPO</h1>
+      </div>
+    </div>
+    <section class="our-team-section">
+      <div class="container">
+          <div class="row my-2" >
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="our-team">
+                      <div class="pic">
+                          <img style="width: 100%;height: 100%;" src="{{ url_for('static',filename='recursos/img/avatar_chico.jpg') }}">
+                      </div>
+                      <div class="team-content">
+                          <h3 class="title">Delgado Deza Jose Ricardo</h3>
+                          <span class="post">Ingenieria de Sistemas-UNT</span>
+                      </div>
+                      <ul class="social">
+                          <li>
+                              <a href="#"  target="_blank"class="fa fa-facebook"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-twitter"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-google-plus"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-linkedin"></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="our-team">
+                      <div class="pic">
+                          <img style="width: 100%;height: 100%;" src="{{ url_for('static',filename='recursos/img/avatar_Chica.png') }}">
+                      </div>
+                      <div class="team-content">
+                          <h3 class="title">Guevara Vega Evellyn Milles Duval</h3>
+                          <span class="post">Ingenieria de Sistemas-UNT</span>
+                      </div>
+                      <ul class="social">
+                          <li>
+                              <a href="#" class="fa fa-facebook"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-twitter"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-google-plus"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-linkedin"></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="our-team">
+                      <div class="pic">
+                        <img style="width: 100%;height: 100%;" src="{{ url_for('static',filename='recursos/img/avatar_chico.jpg') }}">
+                      </div>
+                      <div class="team-content">
+                          <h3 class="title">Rojas Ahumada Kenner Alexander </h3>
+                          <span class="post">Ingenieria de Sistemas-UNT</span>
+                      </div>
+                      <ul class="social">
+                          <li>
+                              <a href="#" class="fa fa-facebook"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-twitter"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-google-plus"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-linkedin"></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="our-team">
+                      <div class="pic">
+                        <img style="width: 100%;height: 100%;" src="{{ url_for('static',filename='recursos/img/avatar_chico.jpg') }}">
+                      </div>
+                      <div class="team-content">
+                          <h3 class="title">Soto Alarcon Ayrton Oscar Alfonso</h3>
+                          <span class="post">Ingenieria de Sistemas-UNT</span>
+                      </div>
+                      <ul class="social">
+                          <li>
+                              <a href="#" class="fa fa-facebook"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-twitter"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-google-plus"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-linkedin"></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="row my-5 justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                      <img style="width: 100%;height: 100%;" src="{{ url_for('static',filename='recursos/img/avatar_chico.jpg') }}">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Venegas Villarreal Alessandro Moises</h3>
+                        <span class="post">Ingenieria de Sistemas-UNT</span>
+                      </div>
+                    <ul class="social">
+                        <li>
+                            <a href="#"  target="_blank"class="fa fa-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-google-plus"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                      <img style="width: 100%;height: 100%;" src="{{ url_for('static',filename='recursos/img/avatar_Chica.png') }}">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Villar Garcia Estela Geraldine</h3>
+                        <span class="post">Ingenieria de Sistemas-UNT</span>
+                      </div>
+                    <ul class="social">
+                        <li>
+                            <a href="#" class="fa fa-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-google-plus"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+
+  </section>
+
+  </section>
+<!--Seccion de FOOTER-->
+<section class="footer">
+<svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 330" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(242, 165, 22, 1)" offset="0%"></stop><stop stop-color="rgba(242, 205, 94, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,231L80,236.5C160,242,320,253,480,253C640,253,800,242,960,225.5C1120,209,1280,187,1440,165C1600,143,1760,121,1920,121C2080,121,2240,143,2400,159.5C2560,176,2720,187,2880,181.5C3040,176,3200,154,3360,165C3520,176,3680,220,3840,236.5C4000,253,4160,242,4320,198C4480,154,4640,77,4800,60.5C4960,44,5120,88,5280,137.5C5440,187,5600,242,5760,264C5920,286,6080,275,6240,275C6400,275,6560,286,6720,264C6880,242,7040,187,7200,187C7360,187,7520,242,7680,269.5C7840,297,8000,297,8160,297C8320,297,8480,297,8640,280.5C8800,264,8960,231,9120,209C9280,187,9440,176,9600,187C9760,198,9920,231,10080,203.5C10240,176,10400,88,10560,55C10720,22,10880,44,11040,49.5C11200,55,11360,44,11440,38.5L11520,33L11520,330L11440,330C11360,330,11200,330,11040,330C10880,330,10720,330,10560,330C10400,330,10240,330,10080,330C9920,330,9760,330,9600,330C9440,330,9280,330,9120,330C8960,330,8800,330,8640,330C8480,330,8320,330,8160,330C8000,330,7840,330,7680,330C7520,330,7360,330,7200,330C7040,330,6880,330,6720,330C6560,330,6400,330,6240,330C6080,330,5920,330,5760,330C5600,330,5440,330,5280,330C5120,330,4960,330,4800,330C4640,330,4480,330,4320,330C4160,330,4000,330,3840,330C3680,330,3520,330,3360,330C3200,330,3040,330,2880,330C2720,330,2560,330,2400,330C2240,330,2080,330,1920,330C1760,330,1600,330,1440,330C1280,330,1120,330,960,330C800,330,640,330,480,330C320,330,160,330,80,330L0,330Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,66L80,66C160,66,320,66,480,71.5C640,77,800,88,960,126.5C1120,165,1280,231,1440,258.5C1600,286,1760,275,1920,236.5C2080,198,2240,132,2400,126.5C2560,121,2720,176,2880,181.5C3040,187,3200,143,3360,154C3520,165,3680,231,3840,236.5C4000,242,4160,187,4320,181.5C4480,176,4640,220,4800,214.5C4960,209,5120,154,5280,137.5C5440,121,5600,143,5760,176C5920,209,6080,253,6240,275C6400,297,6560,297,6720,258.5C6880,220,7040,143,7200,126.5C7360,110,7520,154,7680,176C7840,198,8000,198,8160,214.5C8320,231,8480,264,8640,258.5C8800,253,8960,209,9120,176C9280,143,9440,121,9600,137.5C9760,154,9920,209,10080,209C10240,209,10400,154,10560,137.5C10720,121,10880,143,11040,154C11200,165,11360,165,11440,165L11520,165L11520,330L11440,330C11360,330,11200,330,11040,330C10880,330,10720,330,10560,330C10400,330,10240,330,10080,330C9920,330,9760,330,9600,330C9440,330,9280,330,9120,330C8960,330,8800,330,8640,330C8480,330,8320,330,8160,330C8000,330,7840,330,7680,330C7520,330,7360,330,7200,330C7040,330,6880,330,6720,330C6560,330,6400,330,6240,330C6080,330,5920,330,5760,330C5600,330,5440,330,5280,330C5120,330,4960,330,4800,330C4640,330,4480,330,4320,330C4160,330,4000,330,3840,330C3680,330,3520,330,3360,330C3200,330,3040,330,2880,330C2720,330,2560,330,2400,330C2240,330,2080,330,1920,330C1760,330,1600,330,1440,330C1280,330,1120,330,960,330C800,330,640,330,480,330C320,330,160,330,80,330L0,330Z"></path></svg>
+<p class="texto-encima">Texto encima del SVG</p>
+</section>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+      </body>
+</html>
